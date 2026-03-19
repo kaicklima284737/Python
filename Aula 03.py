@@ -54,5 +54,60 @@ PD = Franja * 0.40
 Gasto = PE + PD
 
 print(f"O valor gasto total na Granja foi de R${Gasto:.2f}")
+
+
+#Exercício 5
+
+
+#Escrever um valor em Real e transformar na Cotação de Dolar
+
+Real = float(input("Qual o Valor de Reais? R$ "))
+
+Dolar = float(Real / 5.22)
+
+print(f"O valor de R${Real}Reais na cotação do Dólar em 03/26 é igual a US {Dolar:.2f} Doláres")
+
+
+
+#Exércicio 6
+
+#Escrever um Algoritmo que leia os Números de Votos Branco, nulos e validos
+# em uma Eleição com o percentual em relação ao total dos votos.
+
+Branco = float(input("Qual o valor de votos Brancos? "))
+Nulo = float(input("Qual o valor de votos Nulos? "))
+Valido = float(input("Qual o valor de votos Válidos? "))
+
+Votos = float(Branco + Nulo + Valido)
+
+branco_porcentagem = (Branco / Votos) * 100
+Nulo_porcentagem = (Nulo / Votos) * 100
+Valido_porcentagem = (Valido / Votos) * 100
+
+print(f"O valor de votos totais é igual á {Votos}")
+print(f"A porcentagem de Votos Brancos em relação ao total é igual a {branco_porcentagem:.2f} %")
+print(f"A porcentagem de Votos Nulos em relação ao total é igual a {Nulo_porcentagem:.2f} %")
+print(f"A porcentagem de Votos Válidos em relação ao total é igual a {Valido_porcentagem:.2f} %")
+
+
+
+#Exércicio 7
+
+
+#Ler o valor do raio de um circulo e calcular o valor da área
+# Formula = π * raio², com π = 3.1415
+
+raio = float(input("Qual o valor do Raio do Círculo: "))
+
+_pi= 3.1415
+
+Resultado = (raio ** 2) * _pi
+
+print(f"O valor da Área do Circulo com raio igual á {raio} é igual a {Resultado:.2f}")
 """
+
+
+#Exércicio 8
+
+#Ler o aumento do salário de um Fúncionario sabendo que ele teve um aumento de 25%.
 
