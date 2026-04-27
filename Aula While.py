@@ -104,6 +104,48 @@ print(f"O menor número foi: {Numero}")
 
 #9. Faça um algoritmo que solicite N números e calcule a média dos números pares e a
 #média dos números ímpares (o valor de N deve ser solicitado ao usuário no início do programa).
+"""
+#Solicitar N vezes um numero
+# Pedir para informarem N vezes números
+#Solicitar os Pares e fazer sua média
+#Solicitar os impares e fazer sua média
+
+N = -1
+N_Cont = 1
+Numeros = 0
+
+soma_Par = 0
+cont_par = 0
+media_par = 0
+
+soma_Impar = 0
+cont_impar = 0
+media_impar = 0
+
+#Validação do Código:
+
+while N < 0:
+    N = int(input("Informe Quantos números irá adicionar (Inteiro): "))
+
+while N_Cont <= N:
+    Numeros = int (input (f"Informe o {N_Cont}° Número (Inteiro): "))
+
+    if Numeros % 2 == 0:
+        soma_Par += Numeros
+        cont_par += 1
+    else:
+        soma_Impar += Numeros
+        cont_impar += 1
+
+    N_Cont += 1
+
+media_par = soma_Par / cont_par if cont_par > 0 else 0
+media_impar = soma_Impar / cont_impar if cont_impar > 0 else 0
+
+print(f"Total de Números Pares: {cont_par}  | Média dos Números Pares: {media_par:.2f} \nTotal de Números Impares: {cont_impar} | Média dos Números Impares: {media_impar:.2f} ")
+
+"""
+
 
 
 
@@ -125,7 +167,11 @@ Por exemplo: o fatorial de 5 é igual a 5*4*3*2*1 = 120
 
 
 
+
+
 """
+Continuação Exercicios While.
+
 1. Fazer um algoritmo que exiba na tela todos os números ímpares de 1 a n, onde n é fornecido pelo usuário.
 2. Fazer um algoritmo que solicite um número inteiro N qualquer e exiba a tabuada de N.
 Exemplo: para N = 7
@@ -174,7 +220,6 @@ else:
 
 
 
-"""
 
 #4. Fazer um algoritmo que leia um número inteiro positivo, calcule e escreva se o número lido é um número
 #perfeito ou não. Número perfeito é aquele cuja soma de seus divisores, exceto ele próprio, é igual ao próprio
@@ -201,7 +246,7 @@ else:
 # Somar todos os divisores de Int, ou seja, se não houver resto é um divisor de Int
 
 
-"""
+
 5. Fazer um algoritmo que solicite um número indeterminado de idades de um grupo de indivíduos. A última idade, 
 que não entrará nos cálculos, contém o valor da idade igual a zero. Calcule a média de idade deste grupo de 
 indivíduos.

@@ -41,12 +41,13 @@ print(f"O maior número digitado foi: {maior}\n"
 7. Escreva um algoritmo que solicite um número inteiro e exiba todos os divisores desse número.
 8. Escreva um algoritmo que determine se um número N (informado pelo usuário) é primo ou não.
 9. Escreva um algoritmo que solicite o valor de N e calcule o fatorial de N.
-"""
+
 
 N = -1
 Fator = 1
+
 while N < 0:
-    N = int(input("Digite um número para calcular o fatorial: "))
+    N = int(input("Digite um número positivo para calcular o fatorial: "))
 
 if N == 0 or N == 1:
     print("Fatorial de 0 é igual a 1.")
@@ -55,7 +56,7 @@ else:
         Fator *= N
 print(f"O Fatorial de {N} é igual a {Fator}")
 
-"""
+
 10. Solicite a quantidade de alunos de uma turma e a quantidade de notas. Para cada aluno, solicite as
 suas notas e exiba a sua respectiva média.
 """
