@@ -144,6 +144,7 @@ media_impar = soma_Impar / cont_impar if cont_impar > 0 else 0
 
 print(f"Total de Números Pares: {cont_par}  | Média dos Números Pares: {media_par:.2f} \nTotal de Números Impares: {cont_impar} | Média dos Números Impares: {media_impar:.2f} ")
 
+
 """
 
 
